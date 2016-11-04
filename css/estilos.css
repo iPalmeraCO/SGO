@@ -1,0 +1,274 @@
+ 
+body {background:#FEFEFE;}
+ 
+.menu_bar {
+	display:none;
+}
+ 
+header {
+	width: 100%;
+}
+ 
+header nav {
+	background: linear-gradient( 0deg, #00529b, #0074bb);
+	z-index:1000;
+	max-width: 1025px;
+	width:100%;
+	margin:25px 0 0 0;
+	border-radius: 5px 5px 5px 5px;
+}
+ 
+header nav ul {
+	list-style:none;
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+ 
+header nav ul li:hover {
+	background:#005098;
+	box-shadow: inset 0 0 1px 2px #004079;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 10px 10px 10px 10px;
+}
+ 
+header nav ul li a span {
+	margin-left:10px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header nav ul li .children {
+	display: none;
+	background:#094fa4;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+ 
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+ 
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+.contenedor{
+		width: 1025px;
+		margin: auto;}
+		
+.general{
+	background:#f4f6f3;
+	border-top: solid 1px #cdcdcd;
+	border-bottom: solid 1px #cdcdcd;
+	}
+.general .contenedor{
+	margin: auto;
+	padding:40px 0 0 0;
+	}	
+	
+.general .contenedor .contenido .botones a{
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+	background: linear-gradient( 0deg, #00529b, #0074bb);
+	padding: 10px;
+	margin: 40px 27px 40px 0;
+	border-radius: 5px 5px 5px 5px;
+	}
+.general .contenedor .contenido .denominacion{
+	margin-top: 40px;
+	}	
+.general .contenedor .contenido .denominacion p{
+	color:#6d6e71;
+	margin: 5px 0 5px 0;
+	}
+	
+.general .contenedor .contenido .cargos p{
+	border: solid 1px #000099;
+	color:#6d6e71;
+	margin: 30px auto;
+	padding: 10px;
+	text-align:center;
+	width: 406px;
+	}			
+	
+.general .contenedor .contenido .titulo{
+	margin: 20px 0 20px 0;
+	} 	
+	
+.general .contenedor .contenido .titulo h2{
+	color:#009ee5;
+	font-size: 24px;
+	display:inline-block;
+	} 
+	
+.general .contenedor .contenido .titulo img{
+	display:inline-block;
+	float:right;
+	} 
+	
+.general .contenedor .contenido .cargo-contenido{
+	margin: 20px 0 20px 0;
+	} 	
+	
+.general .contenedor .contenido .cargo-contenido h3{
+	color:#009ee5;
+	font-size: 18px;
+	} 
+	
+.general .contenedor .contenido .cargo-contenido p{
+	color:#6d6e71;
+	font-size: 18px;
+	display:inline-block;
+	width: 79%;
+	} 
+	
+.general .contenedor .contenido .cargo-contenido .propia{
+	color:#009ee5;
+	font-size: 18px;
+	display:inline-block;
+	width: 5%;
+	} 	
+	
+.general .contenedor .contenido .cargo-contenido .editar-eliminar{
+	display:inline-block;
+	width: 10%;
+	height:auto;
+	float:right;
+	}
+	
+.general .contenedor .contenido .cargo-contenido .editar-eliminar img{
+	display: block;
+	} 	 					
+		
+.seguimiento .contenedor{
+	text-align:center;
+	margin: 20px 0 20px 0;
+	}
+
+.seguimiento .contenedor a{
+	text-decoration:none;
+	color: #6d6e71;
+	}
+
+h1{
+	color: #009ee5;
+	font-size: 74px;
+	position:absolute;
+	margin: 20px 0 0 0;
+	}
+	
+.general .contenedor .banner img{
+	position:relative;
+	width:100%;
+	height: auto;
+	}	
+footer{
+	text-align:center;
+	margin-top:54px;
+	background: #f4f6f3;
+	border-top: solid 1px #cdcdcd}
+	
+footer p{
+	padding:15px 0 15px 0;
+	color: #6d6e71;}		
+
+.logo-sgo{
+	margin: 20px 0 0 0;
+	float:right;
+	}	
+ 
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:40px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background: linear-gradient( 0deg, #00529b, #0074bb);
+		z-index: 1000;
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+ 
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+ 
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+	}
+	
+	
+}
