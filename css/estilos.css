@@ -1,7 +1,11 @@
 
 body {background:#FEFEFE;}
 
-
+h2{
+	color:#009ee5;
+	font-size: 24px;
+	display:inline-block;
+	}
 
 .menu_bar {
 	display:none;
@@ -97,14 +101,105 @@ header nav ul li .caret {
 	}
 	
 .formulario input{
+	width: 300px;
+	height: 34px;
+	border: solid 1px #000066;
+	border-radius: 5px;
+	margin-top: 20px;}
+
+.buscar{
+	width: 300px;
+	height: 34px;
+	border: solid 1px #000066;
+	border-radius: 5px;
+	margin-top: 20px;}
 	
-	display:block;
-	margin: 20px 0 20px 50px;
+.btn-buscar{
+	margin: 0 0 0 20px;
+	}
+	
+.btn-adelante-atras{
+	text-align: center;
+	margin-bottom: 30px;
+	}	
+	
+.btn-adelante{
+	display: inline-block;
+	margin-left:50px;}
+	
+.btn-atras{
+	display: inline-block;
+	margin-right:50px;}		
+	
+.titulo-buscador{
+	display:inline-block;
+	}			
+	 	
+	
+.formulario-2{
+	width: 40%;
+	padding: 50px;
+	margin: auto;
+	}		
+	
+.formulario-2 p{
+	font-size: 18px;
+	color: #009ee5;
+	margin-right: 20px;
+	}
+	
+.formulario-2 .selector{
+	font-size: 18px;
+	color: #6d6e71;
+	margin-right: 20px;
+	}		
+	
+.formulario-2 input{
+	width: 300px;
+	height: 34px;
+	border: solid 1px #000066;
+	border-radius: 5px;
+	margin-top: 5px;}	
+	
+.formulario-2 select{
+	
+	margin: 0px 0 0px 0px;
 	border: solid 1px #000066;
 	border-radius: 5px 5px 5px 5px;
 	width: 300px;
 	height: 39px;
 	}	
+	
+.formulario-2 .texto-campo{
+	margin-top: 20px;
+	}
+.formulario-2 .seleccion-campo{
+	margin-top: 20px;
+	}
+	
+.botones-inf a{
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+	background: linear-gradient( 0deg, #00529b, #0074bb);
+	padding: 15px;
+	border-radius: 5px 5px 5px 5px;
+    font-size: 14px;
+	margin: 40px 0 0 0;
+	}	
+	
+.boton-izq{
+	display:inline-block;
+	margin: 40px 0 0 0;
+	}
+	
+.boton-der{
+	display:inline-block;
+	float: right;
+	margin: 40px 0 0 0;
+	}			
+			
+		
 			
 .boton-login{
 	background: linear-gradient( 0deg, #00529b, #0074bb);
@@ -118,6 +213,7 @@ header nav ul li .caret {
 	background:#f4f6f3;
 	border-top: solid 1px #cdcdcd;
 	border-bottom: solid 1px #cdcdcd;
+	height:auto;
 	}
 .general .contenedor{
 	margin: auto;
@@ -129,7 +225,7 @@ header nav ul li .caret {
 	text-decoration:none;
 	color:#FFF;
 	background: linear-gradient( 0deg, #00529b, #0074bb);
-	padding: 10px;
+	padding: 15px;
 	margin: 40px 27px 40px 0;
 	border-radius: 5px 5px 5px 5px;
   font-family: stagsnaslight;
@@ -141,7 +237,7 @@ header nav ul li .caret {
 .general .contenedor .contenido .denominacion p{
 	color:#6d6e71;
 	margin: 5px 0 5px 0;
-  font-size: 14px;
+  font-size: 18px;
 	}
 
 .general .contenedor .contenido .cargos p{
@@ -164,12 +260,13 @@ header nav ul li .caret {
 	}
 
 .general .contenedor .contenido .titulo img{
-	display:inline-block;
 	float:right;
 	}
 
 .general .contenedor .contenido .cargo-contenido{
-	margin: 20px 0 20px 0;
+	display:inline-block;
+	margin: 0px 0 0px 0;
+	width:auto;
 	}
 
 .general .contenedor .contenido .cargo-contenido h3{
@@ -180,20 +277,24 @@ header nav ul li .caret {
 .general .contenedor .contenido .cargo-contenido p{
 	color:#6d6e71;
 	font-size: 18px;
-	display:inline-block;
-	width: 79%;
+	float: left;
+	width: 75%;
 	}
 
 .general .contenedor .contenido .cargo-contenido .propia{
+	float: left;
+	width: 10%;
+	margin: 20px 0 0 50px;
+	
+	}
+	
+.general .contenedor .contenido .cargo-contenido .propia p{
 	color:#009ee5;
 	font-size: 18px;
-	display:inline-block;
-	width: 5%;
-	}
+	}	
 
 .general .contenedor .contenido .cargo-contenido .editar-eliminar{
-	display:inline-block;
-	width: 10%;
+	float: left;
 	height:auto;
 	float:right;
 	}
@@ -201,6 +302,11 @@ header nav ul li .caret {
 .general .contenedor .contenido .cargo-contenido .editar-eliminar img{
 	display: block;
 	}
+	
+#botones-derecha{
+	float:right;
+	display:inline-block;
+	}	
 
 .seguimiento .contenedor{
 	text-align:center;
@@ -238,6 +344,37 @@ footer p{
 	margin: 20px 0 0 0;
 	float:right;
 	}
+
+.titulo-oscuro{
+	color: #094fa4;
+	text-align:center;}	
+	
+/*tabla*/
+table{
+	border: solid 1px #e2e3e2;
+	border-collapse:collapse;
+	margin: 20px 0 30px 0;
+	color: #6d6e71;
+	text-align:center;
+	}
+	
+table td{
+	border: solid 1px #e2e3e2;
+	padding: 10px 5px;
+	}
+table .titulos-tabla{
+	background: #24408a;
+	color:#FFF;
+	}
+	
+table .fblanco-tabla{
+	background: #FFF;
+	}
+.funcion-dependencia{
+	text-align:center;
+	display:block;
+	}	
+						
 
 @media screen and (max-width: 800px) {
 	body {
