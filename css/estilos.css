@@ -1,16 +1,6 @@
-@font-face{
-   font-family:stagsnaslight;
-   src: url(../fonts/StagSans-Light.otf);
-   [font-weight:normal;
-   [font-style:normal;
-}
-
 
 body {background:#FEFEFE;}
 
-p {
-	font-family: stagsanslight;
-}
 
 
 .menu_bar {
@@ -49,7 +39,6 @@ header nav ul li a {
 	display:block;
 	text-decoration:none;
 	padding: 10px 10px 10px 10px;
-  font-family: stagsnaslight;
   font-size: 14px;
 }
 
@@ -125,7 +114,6 @@ header nav ul li .caret {
 .general .contenedor .contenido .denominacion p{
 	color:#6d6e71;
 	margin: 5px 0 5px 0;
-  font-family: stagsnaslight;
   font-size: 14px;
 	}
 
