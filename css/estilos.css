@@ -86,6 +86,33 @@ header nav ul li .caret {
 .contenedor{
 		width: 1025px;
 		margin: auto;}
+		
+.formulario{
+	text-align:center;
+	width: 40%;
+	border: solid 1px #000066;
+	border-radius: 5px 5px 5px 5px;
+	padding: 50px;
+	margin: auto;
+	}
+	
+.formulario input{
+	
+	display:block;
+	margin: 20px 0 20px 50px;
+	border: solid 1px #000066;
+	border-radius: 5px 5px 5px 5px;
+	width: 300px;
+	height: 39px;
+	}	
+			
+.boton-login{
+	background: linear-gradient( 0deg, #00529b, #0074bb);
+	color:#FFF;
+	}
+.texto-login:{
+	color: #6d6e71;
+	}					
 
 .general{
 	background:#f4f6f3;
