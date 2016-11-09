@@ -1,0 +1,17 @@
+@media screen and (max-width: 800px){
+header nav {
+    width: 100%;    
+
+}
+
+header nav ul li a {
+      width: auto !important;
+}
+
+}
+
+@media screen and (min-width: 800px){
+header nav ul li a {
+      width: 85px !important;
+}
+}

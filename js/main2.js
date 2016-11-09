@@ -11,7 +11,10 @@ function main () {
   			$( "nav" ).animate({    
     			left: "0"    
   				}, 500, function() {
+  					var width = $(window).width();
+  					var cal = width*0.8;
     				$('nav').css("position","initial");
+    				$('nav').css("width",cal+"px");
   			});
 
 			contador = 0;
