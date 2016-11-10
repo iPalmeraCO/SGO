@@ -25,7 +25,7 @@ function main () {
 	});
  
 	// Mostramos y ocultamos submenus
-	$('.submenu').click(function(){
+	/*$('.submenu').click(function(){
 		$(this).children('.children').slideToggle();
-	});
+	});*/
 }

@@ -43,7 +43,7 @@ header nav ul li a {
 	display:block;
 	text-decoration:none;
 	padding: 10px 10px 10px 10px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 header nav ul li a span {
@@ -58,7 +58,8 @@ header nav ul li .children {
 	display: none;
 	background:#094fa4;
 	position: absolute;
-	width: 150%;
+	padding-left: 10px;
+	padding-right: 10px;
 	z-index:1000;
 }
 
