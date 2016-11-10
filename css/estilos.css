@@ -378,7 +378,7 @@ table .fblanco-tabla{
 
 @media screen and (max-width: 800px) {
 	body {
-		padding-top:40px;
+		padding-top:36px;
 	}
 
 	.menu_bar {
@@ -406,12 +406,12 @@ table .fblanco-tabla{
 	}
 
 	header nav {
+		padding-top: 20px;
 		width: 80%;
 		height: calc(100% - 80px);
 		position: fixed;
 		right:100%;
-		margin: 0;
-		overflow: scroll;
+		margin: 0;		
 	}
 
 	header nav ul li {
