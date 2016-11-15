@@ -5,8 +5,10 @@
 <title>BBVA Sistema de gestión organizacional mi manual</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
+<link href="css/menu1.css" rel="stylesheet" type="text/css">
 <link href="fonts/style.css" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/w3data.js"></script>
 <script src="js/main.js"></script>
 </head>
 
@@ -18,69 +20,9 @@
         </div>
         <div id="contenedor" class="contenedor">
         	<div class="menu_bar" style="color:#FFF">
-            <a href="#">menu<span class="icon-menu"></span></a>
+            <a href="#"><span class="icon-menu"></span></a>
             </div>
-            <nav>
-			<ul>
-            <li class="submenu">
-					<a href="#">Mi manual<br>de funciones<span class="icon-chevron-right"></span></a>
-					<ul class="children">
-						<li><a href="#">Mi manual<span class="icon-dot"></span></a></li>
-					</ul>
-				</li>
-            	<li class="submenu">
-					<a href="#">Planta<br>autorizada<span class="icon-chevron-right"></span></a>
-					<ul class="children">
-						<li><a href="#">Mi estructura</span></a></li>
-					</ul>
-				</li>
-            	<li class="submenu">
-					<a href="#">Función de mi<br>dependencia<span class="icon-chevron-right"></span></a>
-					<ul class="children">
-						<li><a href="#">Mi dependencia<span class="icon-dot"></span></a></li>
-						<li><a href="#">Consultar dependencias<span class="icon-dot"></span></a></li>
-						<li><a href="#">Revisiones pendientes<span class="icon-dot"></span></a></li>
-                        <li><a href="#">Por aprobar D.O.<span class="icon-dot"></span></a></li>
-                        <li><a href="#">Filtro dependencias<span class="icon-dot"></span></a></li>
-					</ul>
-				</li>
-				<li class="submenu">
-					<a href="#">Para<br>gestión<span class="icon-chevron-right"></span></a>
-					<ul class="children">
-						<li><a href="#">Puestos sin funciones <span class="icon-dot"></span></a></li>
-						<li><a href="#">Redenominaciones / Traslados <span class="icon-dot"></span></a></li>
-						<li><a href="#">Solicitudes de ajuste <span class="icon-dot"></span></a></li>
-                        <li><a href="#">Aprobaciones pendientes <span class="icon-dot"></span></a></li>
-						<li><a href="#">Aprobación de manuales <span class="icon-dot"></span></a></li>
-						<li><a href="#">Aprobación de funciones D.O. <span class="icon-dot"></span></a></li>
-                        <li><a href="#">Aprobación de manuales D.O. <span class="icon-dot"></span></a></li>
-						<li><a href="#">Por publicar funciones <span class="icon-dot"></span></a></li>
-						<li><a href="#">Por publicar manuales <span class="icon-dot"></span></a></li>
-					</ul>
-				</li>
-				<li class="submenu">
-					<a href="#">Informes<br><span class="icon-chevron-right"></span></span></a>
-					<ul class="children">
-						<li><a href="#">Trazabilidad de novedades <span class="icon-dot"></span></a></li>
-						<li><a href="#">Histórico manuales por posición <span class="icon-dot"></span></a></li>
-						<li><a href="#">Histórico manuales por usuario <span class="icon-dot"></span></a></li>
-                        <li><a href="#">Manuales entendidos / No entendidos <span class="icon-dot"></span></a></li>
-						<li><a href="#">Manual sin modificar (Tiempo) <span class="icon-dot"></span></a></li>
-						<li><a href="#">Seguimiento cargas <span class="icon-dot"></span></a></li>
-                        <li><a href="#">Histórico dependencia <span class="icon-dot"></span></a></li>
-					</ul>
-				</li>
-				<li><a href="#">Buscador<br>funciones</a></li>
-				<li><a href="#">Administración<br> aplicación</a></li>
-                 <li class="submenu">
-					<a href="#">Vacantes<br>de funciones<span class="icon-chevron-right"></span></a>
-					<ul class="children">
-						<li><a href="#">Formulario<span class="icon-dot"></span></a></li>
-					</ul>
-				</li>
-				<li><a href="#">Cerrar<br>sesión</a></li>
-			</ul>
-		</nav>
+            <nav w3-include-html="menu.html"></nav>
     	</div>
     </header>
     
@@ -255,6 +197,6 @@
      	<div class="contenedor">
      	<p>Banco Bilbao Vizcaya Argentaria Colombia S.A. 2016</p>
         </div>
-     </footer>
+     </footer> <script>w3IncludeHTML();</script>
 </body>
 </html>
