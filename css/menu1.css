@@ -1,23 +1,84 @@
-@media screen and (max-width: 800px){
-header nav {
-    width: 100%;    
+@media screen and (max-width: 1011px){
 
-}
-.contenedor {
-    width: 100%;
-  }
 header nav ul li a {
       width: auto !important;
 }
 
+.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background: linear-gradient( 0deg, #00529b, #0074bb);
+		z-index: 1000;
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		padding-top: 20px;
+		width: 100%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;		
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		display: none;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+
+.tituhome{
+	font-size: 8vw;
+}
+    
+#banner img{
+	width: 100%;
+}
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1011px){
 header nav ul li a {
-      width: 100px !important;
+      width: 103px !important;
 }
 }
 
-header nav ul li:hover{
+header nav ul li a:hover{
       background: #4ca100;
+      color: #FFF;
 }
